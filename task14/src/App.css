@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: auto;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 60px;
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 240px;
+  height: 38px;
+}
+
+.try-free {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #FF52C1;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #FF52C1;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.section-content {
+  text-align: center;
+  margin: 100px 8px 50px;
+  padding-top: 100px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 48px;
+  color: #00252E;
+  margin-bottom: 26px;
+  line-height: 1.2;
+}
+
+.section-paragraph {
+  font-size: 20px;
+  color: #00252E;
+  line-height: 1.6;
+  margin: 0 auto 30px;
+  max-width: 600px;
+  width: 90%;
+}
+
+.section-button {
+  font-size: 20px;
+  background-color: #FF52C1;
+  color: white;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.section-button:hover {
+  background-color: #e041a9;
+}
+
+.table {
+  display: block;
+  margin: 50px auto;
+  max-width: 90%;
+  height: auto;
+}
+
+.community-logo,
+.message-logo {
+  width: 56px;
+  height: 56px;
+}
+
+.first-number,
+.second-number {
+  color: #00252E;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.number-h3,
+.message-h3 {
+  color: #808E9A;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0 170px;
+}
+
+.grow-together-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 431px 0;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.grow-together-text {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 20px;
+  color: #00252E;
+  min-width: 300px;
+}
+
+.grow-together-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 300px;
+}
+
+.group-photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.build-community {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px 0;
+  margin-bottom: 200px;
+}
+
+.build-community h1 {
+  color: #00252E;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #00252E;
+  padding: 50px;
+  color: white;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+  max-width: 400px;
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.footer-huddle-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  width: 340px;
+  height: 72px;
+  font-size: 14px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 24px;
+}
+
+.contact-icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 24px;
+  cursor: pointer;
+  margin-top: 80px;
+}
+
+.newsletter-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter-description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  width: 344px;
+  height: 72px;
+  font-size: 14px;
+}
+
+.newsletter-signup {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.email-input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
+  height: 48px;
+  background-color: white;
+  margin-top: 40px;
+}
+
+.subscribe-button {
+  padding: 12px 41px;
+  background-color: #FF52C1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.subscribe-button:hover {
+  background-color: #e041a9;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    order: -1;
+  }
+}
